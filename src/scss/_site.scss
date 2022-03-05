@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+$primary-font: 'Ubuntu Mono', monospace;
+$body-bg: $primary-bg;
+body {
+  background-color: $body-bg;
+  font-family: $primary-font;
+  font-size: 20px;
+}
+.NavigationBar {
+  width: 100%;
+  height: fit-content;
+  background-color: $secondary-bg;
+  border-bottom: 3px solid $innerbg0;
+  @include box-shadow1;
+  @media (min-width: 300px) {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    text-align: center;
+    display: block;
+  }
+  h1 {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $border1;
+    @media (min-width: 300px) {
+      font-size: 48px;
+      padding: 10px;
+    }
+    @media (min-width: 768px) {
+      font-size: 36px;
+      padding: 2px;
+    }
+  }
+  
+    .burger {
+        margin-left: auto;
+      margin-right: 20px;
+        button {
+            background-color: inherit;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      border: 0.5px solid $border0;
+      color: $border1;
+      
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .dropDown {
+    position: absolute;
+    top: 75px;
+    width: 90%;
+    right: 10px;
+    background-color: $secondary-bg;
+    border: 1px solid $border1;
+    @include box-shadow1;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  .flex {
+    @media (min-width: 300px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .buttonRow {
+      margin-bottom: 5px;
+      @media (min-width: 300px) {
+        display: none;
+      }
+      @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 75%;
+        justify-content: space-around;
+        padding: 0px;
+      }
+    }
+  }
+}
+.button1 {
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid $border0;
+  background-color: $primary-bg;
+  color: $border1 !important;
+  @include btn-shadow1;
+  @media (min-width: 300px) {
+    border-radius: none;
+    margin: 3px;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    border-radius: 0px 0px 15px 15px;
+    margin: 0px;
+    border-top: none !important;
+    width: fit-content;
+  }
+}

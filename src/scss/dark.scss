@@ -1,0 +1,26 @@
+$primary-bg: #212121;
+$body-bg: $primary-bg;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+$secondary-bg: #323232;
+$border0: #c56824;
+$border1: #a09f57;
+$innerbg0: #212121;
+$innerbg1: #353535;
+$innerbg2: #484848;
+$shadow: #fff;
+
+@mixin box-shadow1 {
+  box-shadow: 2px 2px 10px;
+}
+@mixin btn-shadow1 {
+  box-shadow: 1px 2px 6px;
+  color: $secondary-bg;
+  &:hover {
+    box-shadow: 2px 3px 18px;
+  }
+}
+:root[data-theme='theme-dark'] {
+  @import './site.scss';
+}
