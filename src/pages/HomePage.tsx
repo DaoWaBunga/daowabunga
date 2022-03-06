@@ -1,5 +1,4 @@
 import FlexRow from '../components/Rows/FlexRow';
-import { ColorModeSwitcher } from '../layouts/components/ColorModeSwitcher';
 import DawaLogo from '../assets/Daowabunga.png';
 export const HomePage = () => {
   return (
@@ -26,12 +25,6 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-        <ColorModeSwitcher />
-        <ColorModeSwitcher />
-
-        <ColorModeSwitcher />
-
-        <ColorModeSwitcher />
       </FlexRow>
     </>
   );

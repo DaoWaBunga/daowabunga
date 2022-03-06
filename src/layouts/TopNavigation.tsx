@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import Links from './components/Links';
 import { Link } from 'react-router-dom';
+import { ColorModeSwitcher } from './components/ColorModeSwitcher';
 
 export const TopNavigation = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -35,6 +36,9 @@ export const TopNavigation = () => {
                 </Link>
               </div>
             ))}
+            <div className="ColorModeSwitchMobile">
+              <ColorModeSwitcher />
+            </div>
           </div>
         ) : null}
       </div>

@@ -20,8 +20,9 @@ function App() {
             </Routes>
           </div>
           <BodyPadding />
-          <BottomFooter />
         </div>
+
+        <BottomFooter />
       </Router>
     </>
   );
