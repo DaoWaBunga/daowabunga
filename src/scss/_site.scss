@@ -1,26 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 $primary-font: 'Ubuntu Mono', monospace;
 $body-bg: $primary-bg;
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $border0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $body-bg;
+}
+p {
+  color: $text-color1;
+}
 body {
   background-color: $body-bg;
   font-family: $primary-font;
   font-size: 20px;
 }
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 .NavigationBar {
   width: 100%;
-  height: fit-content;
   background-color: $secondary-bg;
+  background-image: url('../assets/DaowabungaCircleLogo.png');
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: left;
   border-bottom: 3px solid $innerbg0;
   @include box-shadow1;
   @media (min-width: 300px) {
-    text-align: left;
+    text-align: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
     align-items: center;
+    height: 90px;
   }
   @media (min-width: 768px) {
     text-align: center;
     display: block;
+  }
+  a {
+    text-decoration: none !important;
   }
   h1 {
     font-weight: 600;
@@ -29,18 +62,22 @@ body {
     @media (min-width: 300px) {
       font-size: 48px;
       padding: 10px;
+      display: block;
+      width: 100%;
+      text-align: right;
     }
     @media (min-width: 768px) {
       font-size: 36px;
       padding: 2px;
+      text-align: center;
     }
   }
-  
-    .burger {
-        margin-left: auto;
-      margin-right: 20px;
-        button {
-            background-color: inherit;
+
+  .burger {
+    margin-left: auto;
+    margin-right: 20px;
+    button {
+      background-color: inherit;
       display: flex;
       cursor: pointer;
       justify-content: center;
@@ -48,7 +85,7 @@ body {
       height: fit-content;
       border: 0.5px solid $border0;
       color: $border1;
-      
+
       @media (min-width: 768px) {
         display: none;
       }
@@ -61,6 +98,7 @@ body {
     right: 10px;
     background-color: $secondary-bg;
     border: 1px solid $border1;
+    border-radius: 7.5px;
     @include box-shadow1;
     @media (min-width: 768px) {
       display: none;
@@ -101,6 +139,7 @@ body {
   height: 40px;
   justify-content: center;
   padding: 5px;
+  min-width: 65px !important;
   border: 2px solid $border0;
   background-color: $primary-bg;
   color: $border1 !important;
@@ -115,5 +154,185 @@ body {
     margin: 0px;
     border-top: none !important;
     width: fit-content;
+  }
+}
+.websiteBody {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.sleekDesktop {
+  @media (min-width: 300px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    display: block;
+    width: 10%;
+    height: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 15%;
+  }
+}
+.sleekDesktopBody {
+  @media (min-width: 300px) {
+    display: block;
+    background-color: $secondary-bg;
+    width: 95%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    @include box-shadow1;
+    margin-top: 10px;
+  }
+  @media (min-width: 768px) {
+    display: block;
+    width: 80%;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+  @media (min-width: 1024px) {
+    width: 70%;
+    padding: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+}
+.SpaceAroundRowWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.SpaceAroundRowNoWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.CenteredColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CompanyLogoBlock {
+  width: fit-content;
+  height: auto;
+  border-radius: 100%;
+  padding: 2%;
+  img {
+    display: block;
+    height: auto;
+    @media (min-width: 300px) {
+      width: 250px;
+    }
+    @media (min-width: 500px) {
+      width: 350px;
+    }
+    @media (min-width: 1024px) {
+      width: 450px;
+    }
+  }
+}
+
+.NewsBanner {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 3px;
+  border: 5px solid $border1;
+  @include box-shadow2;
+  background-color: $body-bg;
+  border-radius: 15px;
+  @media (min-width: 375px) {
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  .TextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 275px;
+    padding: 15px;
+    @media (min-width: 300px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    p {
+      overflow: auto;
+    }
+  }
+  .ImageContent {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    img {
+      display: block;
+      padding: 10px;
+      height: auto;
+      background-color: $hideondarkbg;
+      border: 2px solid $hideondarkborder;
+      border-radius: 15px;
+      @include hideondarkshadow;
+      @media (min-width: 300px) {
+        width: 250px;
+      }
+      @media (min-width: 1200px) {
+        width: 350px;
+      }
+      @media (min-width: 1600px) {
+        width: 450px;
+      }
+    }
+  }
+}
+.WebFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  @media (min-width: 300px) {
+    background-color: $secondary-bg;
+    border-top: 3px solid $border0;
+  }
+  @media (min-width: 768px) {
+    background-color: transparent;
+    border-top: none;
+  }
+  img {
+    display: none;
+  }
+  &:hover {
+    background-color: $secondary-bg;
+    border-top: 3px solid $border0;
+    @media (min-width: 768px) {
+      background-size: 75px;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-image: url('../assets/DaowabungaCircleLogo.png');
+    }
+    img {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
   }
 }
