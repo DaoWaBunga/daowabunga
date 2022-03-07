@@ -1,0 +1,44 @@
+[
+  {
+    "title": "DAO LAUNCHPAD",
+    "image": "../assets/Daowabunga.png",
+    "text": "DAO to fund physical Crypto Mining element and DAWA Token over time and other DeFi projects NFT'S, Tomb, DEX, and P2E Game",
+    "foot": "",
+    "buttonLink": "",
+    "buttonText": "DAO",
+    "buttonIsTrue": true,
+    "titleIsTrue": true,
+    "imageIsTrue": true,
+    "textIsTrue": true,
+    "footIsTrue": true,
+    "cardIsActive": true
+  },
+  {
+    "title": "PRE SALE NFT",
+    "image": "../assets/DaowabungaCircleLogo.png",
+    "text": "First Project to use a long term usage NFT for being apart of the presale/WL - Earn perks per Tier - Stake in token farming pools - DAO voting and company shares",
+    "foot": "Coming Soon",
+    "buttonLink": "",
+    "buttonText": "",
+    "buttonIsTrue": false,
+    "titleIsTrue": true,
+    "imageIsTrue": true,
+    "textIsTrue": true,
+    "footIsTrue": true,
+    "cardIsActive": true
+  },
+  {
+    "title": "MINING / ELECTRICITY",
+    "image": "",
+    "text": "Our Team aims to create the first community created Crypto Mining/Electricity provider Company that works in tandem with DaoWaBunga's ecosystem.",
+    "foot": "Coming Soon",
+    "buttonLink": "https://google.com",
+    "buttonText": "Google",
+    "buttonIsTrue": false,
+    "titleIsTrue": true,
+    "imageIsTrue": true,
+    "textIsTrue": true,
+    "footIsTrue": true,
+    "cardIsActive": true
+  }
+]

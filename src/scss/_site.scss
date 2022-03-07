@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 $primary-font: 'Ubuntu Mono', monospace;
 $body-bg: $primary-bg;
+@mixin btn-shadow2 {
+  box-shadow: 1px 1px 3px;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -29,7 +32,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 4;
 }
 .stickyFooter {
   position: sticky;
@@ -39,8 +42,8 @@ body {
 .stickySettings {
   position: sticky;
   position: -webkit-sticky;
-  bottom: 50px;
   padding: 1%;
+  bottom: 60px;
 }
 .NavigationBar {
   width: 100%;
@@ -148,7 +151,12 @@ body {
   display: flex;
   width: 100px;
   align-items: center;
-  background-color: $button1;
+  @media (min-width: 300px) {
+    background-color: $secondary-bg;
+  }
+  @media (min-width: 768px) {
+    background-color: $button1;
+  }
   border-radius: 15px;
   .light {
     @include buttonAction;
@@ -233,6 +241,8 @@ body {
     border-radius: 8px;
     @include box-shadow1;
     margin-top: 10px;
+    z-index: 2;
+    margin-bottom: 100px;
   }
   @media (min-width: 768px) {
     display: block;
@@ -345,10 +355,9 @@ body {
 .OutterFoot {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 75px;
+  position: absolute !important;
+  bottom: 0;
   left: 15px;
-
   .WebFooter {
     display: flex;
     justify-content: center;
@@ -358,6 +367,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+
     @media (min-width: 300px) {
       background-color: $secondary-bg;
       border-top: 3px solid $border0;
@@ -404,5 +414,173 @@ body {
   padding: 20px;
   @media (min-width: 768px) {
     display: none;
+  }
+}
+
+.CardBasic {
+  display: flex;
+  background-color: $body-bg;
+  border-radius: 10px;
+  border: 5px double $border1;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  @include card-shadow;
+  flex-direction: column;
+  height: auto;
+  @media (min-width: 300px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+  @media (min-width: 1024px) {
+    width: 27.5%;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: $title-color1;
+  }
+  .image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    img {
+      background-color: $hideondarkbg;
+      border: 1px solid $hideondarkborder;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: $text-color1;
+    width: 100%;
+    min-height: 0px;
+    max-height: 150px;
+    overflow: auto;
+    padding: 1%;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $hideondarkbg;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    width: 100%;
+    min-height: 0;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.MainButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: $text-color1 !important;
+  background-color: $secondary-bg;
+  border: 3px solid $border0;
+  border-radius: 15px;
+  @include buttonAction;
+  @include btn-shadow2;
+  a {
+    all: unset;
+    color: $text-color1;
+  }
+  &:hover {
+    border: 4px solid $border1;
+  }
+  @media (min-width: 300px) {
+    width: 100%;
+    font-size: 30px;
+  }
+  @media (min-width: 768px) {
+    width: 50%;
+    font-size: 36px;
+  }
+}
+.RoadMap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  margin: auto;
+  .leftMap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    .content {
+      h1 {
+        text-align: center;
+        color: $title-color1;
+        font-size: 28px;
+      }
+      p {
+        margin: 0;
+  color: $text-color1;
+
+        padding: 0;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      padding: 10px;
+      background-color: $body-bg;
+      border: 3px double $border0;
+      @include box-shadow1;
+      @media (min-width: 300px) {
+        text-align: left;
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        width: unset;
+        min-width: 55%;
+        max-width: 70%;
+        text-align: right;
+      }
+    }
+  }
+  .rightMap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    .content {
+      h1 {
+        font-size: 28px;
+        text-align: center;
+        color: $title-color1;
+      }
+      p {
+        margin: 0;
+  color: $text-color1;
+
+        padding: 0;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      padding: 10px;
+      margin: 5px;
+      @include box-shadow1;
+
+      background-color: $body-bg;
+      border: 3px double $border1;
+      @media (min-width: 300px) {
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        width: unset;
+        min-width: 55%;
+        max-width: 70%;
+      }
+    }
   }
 }

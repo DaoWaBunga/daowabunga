@@ -10,6 +10,7 @@ $innerbg0: #e09055;
 $innerbg1: #d8742a;
 $innerbg2: #af5d20;
 $text-color1: #040302;
+$title-color1: $text-color1;
 $hideondarkbg: $secondary-bg;
 $hideondarkborder: $border1;
 $button1: beige;
@@ -34,6 +35,10 @@ $button1: beige;
 }
 @mixin hideondarkshadow {
   box-shadow: 2px 3px 18px;
+}
+@mixin card-shadow {
+  box-shadow: 2px 3px 8px;
+  color: $border1;
 }
 @mixin btn-shadow1 {
   box-shadow: 3px -2px 12px;

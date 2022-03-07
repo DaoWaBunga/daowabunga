@@ -1,15 +1,70 @@
+import { useState } from 'react';
 type CardProps = {
-  title: any;
-  body: any;
-  footer: any;
+  title: string;
+  body: string;
+  footer: string;
+  image: string;
+  buttonLink: string;
+  buttonText: string;
+  trueButton: boolean;
+  trueCard: boolean;
+  trueTitle: boolean;
+  trueImage: boolean;
+  trueBody: boolean;
+  trueFoot: boolean;
 };
-export const CardBasic = ({ title, body, footer }: CardProps) => {
+export const CardBasic = ({
+  title,
+  body,
+  footer,
+  image,
+  trueCard,
+  trueTitle,
+  trueBody,
+  trueFoot,
+  trueImage,
+  trueButton,
+  buttonLink,
+  buttonText
+}: CardProps) => {
+  const [showTitle, setShowTitle] = useState(trueTitle);
+  const [showImage, setShowImage] = useState(trueImage);
+  const [showBody, setShowBody] = useState(trueBody);
+  const [showFoot, setShowFoot] = useState(trueFoot);
+  const [showCard, setShowCard] = useState(trueCard);
+  const [showButton, setShowButton] = useState(trueButton);
   return (
-    <div className="CardBasic">
-      <div className="title">{title}</div>
-      <div className="body">{body}</div>
-      <div className="footer">{footer}</div>
-    </div>
+    <>
+      {showCard ? (
+        <div className="CardBasic" onLoad={() => setShowCard(trueCard)}>
+          {showTitle ? (
+            <div className="title" onLoad={() => setShowTitle(trueTitle)}>
+              {title}
+            </div>
+          ) : null}
+          {showImage ? (
+            <div className="image" onLoad={() => setShowImage(trueImage)}>
+              <img src={image} />
+            </div>
+          ) : null}
+          {showBody ? (
+            <div className="body" onLoad={() => setShowBody(trueBody)}>
+              {body}
+            </div>
+          ) : null}
+          {showFoot ? (
+            <div className="foot" onLoad={() => setShowFoot(trueFoot)}>
+              {footer}
+              {showButton ? (
+                <div className="MainButton" onLoad={() => setShowButton(trueButton)}>
+                  <a href={buttonLink}>{buttonText}</a>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+    </>
   );
 };
 export default CardBasic;
