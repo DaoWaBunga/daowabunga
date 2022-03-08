@@ -14,6 +14,19 @@ $title-color1: $text-color1;
 $hideondarkbg: $secondary-bg;
 $hideondarkborder: $border1;
 $button1: beige;
+$bg-TKG: url('../assets/tkg_graffiti_light.png');
+
+@mixin linearbg {
+  background: linear-gradient(
+    309deg,
+    rgba(207, 183, 132, 1) 0%,
+    rgba(160, 159, 87, 1) 50%,
+    rgba(197, 104, 36, 1) 100%
+  );
+}
+@mixin vice-linearbg {
+  background: linear-gradient(315deg, rgba(75,175,210,1) 0%, rgba(255,76,142,1) 100%);
+}
 @mixin box-shadow1 {
   box-shadow: 2px 1px 12px;
 }

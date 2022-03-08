@@ -4,8 +4,8 @@ const Links = [
     location: '/'
   },
   {
-    title: 'DAO',
-    location: '/dao'
+    title: 'TKG',
+    location: '/tkg'
   }
 ];
 export default Links;
