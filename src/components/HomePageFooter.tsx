@@ -4,7 +4,7 @@ import DawaLogo from '../assets/DaowabungaCircleLogo.png';
 export const HomePageFooter = () => {
   return (
     <div className="FixedInnerFoot">
-      <FlexRow>
+      <FlexRow classname={'NewsBanner'}>
         <FlexColumn>
           <h1>DaoWaBunga!</h1>
           <p>contact@daowabunga.finance</p>

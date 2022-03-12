@@ -10,7 +10,7 @@ export const BottomFooter = () => {
       </div>
       <div className="OutterFoot">
         <div className="WebFooter stickyFooter">
-          <FlexRow>
+          <FlexRow classname={'card'}>
             <p>Copyright Daowabunga, 2022.</p>
           </FlexRow>
         </div>

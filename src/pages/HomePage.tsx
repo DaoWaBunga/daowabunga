@@ -15,7 +15,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="sleekDesktopBody">
-        <FlexRow>
+        <FlexRow classname={''}>
           <div className="NewsBanner">
             <div className="ImageContent">
               <img src={NewsImage[0]} />
@@ -26,7 +26,7 @@ export const HomePage = () => {
             </div>
           </div>
         </FlexRow>
-        <FlexRow>
+        <FlexRow classname={''}>
           {HomepageCards.map((card) => (
             <CardBasic
               key={card.title}
@@ -45,16 +45,16 @@ export const HomePage = () => {
             />
           ))}
         </FlexRow>
-        <FlexRow>
+        <FlexRow classname={''}>
           <h1>Roadmap</h1>
         </FlexRow>
-        <FlexRow>
+        <FlexRow classname={''}>
           <RoadMap />
         </FlexRow>
-        <FlexRow>
+        <FlexRow classname={''}>
           <h1>Meet The Team</h1>
         </FlexRow>
-        <FlexRow>
+        <FlexRow classname={''}>
           <TeamMemberCard />
           <TeamMemberCard />
           <TeamMemberCard />
