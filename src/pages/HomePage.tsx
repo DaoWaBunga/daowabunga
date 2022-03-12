@@ -1,4 +1,4 @@
-import FlexRow from '../components/Rows/FlexRow';
+import { FlexRow } from '../styles';
 import DawaLogo from '../assets/Daowabunga.png';
 import CardBasic from '../components/Cards/CardBasic';
 import HomepageCards from '../data/HomepageCards.json';
@@ -15,7 +15,7 @@ export const HomePage = () => {
   return (
     <>
       <div className="sleekDesktopBody">
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           <div className="NewsBanner">
             <div className="ImageContent">
               <img src={NewsImage[0]} />
@@ -26,7 +26,7 @@ export const HomePage = () => {
             </div>
           </div>
         </FlexRow>
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           {HomepageCards.map((card) => (
             <CardBasic
               key={card.title}
@@ -45,16 +45,16 @@ export const HomePage = () => {
             />
           ))}
         </FlexRow>
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           <h1>Roadmap</h1>
         </FlexRow>
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           <RoadMap />
         </FlexRow>
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           <h1>Meet The Team</h1>
         </FlexRow>
-        <FlexRow classname={''}>
+        <FlexRow className={''}>
           <TeamMemberCard />
           <TeamMemberCard />
           <TeamMemberCard />

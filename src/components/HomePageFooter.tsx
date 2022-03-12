@@ -1,10 +1,9 @@
-import FlexRow from './Rows/FlexRow';
-import FlexColumn from './Columns/FlexColumn';
+import { FlexRow, FlexColumn } from '../styles';
 import DawaLogo from '../assets/DaowabungaCircleLogo.png';
 export const HomePageFooter = () => {
   return (
     <div className="FixedInnerFoot">
-      <FlexRow classname={'NewsBanner'}>
+      <FlexRow className={'NewsBanner'}>
         <FlexColumn>
           <h1>DaoWaBunga!</h1>
           <p>contact@daowabunga.finance</p>

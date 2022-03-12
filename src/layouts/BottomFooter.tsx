@@ -1,4 +1,4 @@
-import FlexRow from '../components/Rows/FlexRow';
+import { FlexRow } from '../styles';
 import { ColorModeSwitcher } from './components/ColorModeSwitcher';
 export const BottomFooter = () => {
   return (
@@ -10,7 +10,7 @@ export const BottomFooter = () => {
       </div>
       <div className="OutterFoot">
         <div className="WebFooter stickyFooter">
-          <FlexRow classname={'card'}>
+          <FlexRow>
             <p>Copyright Daowabunga, 2022.</p>
           </FlexRow>
         </div>
