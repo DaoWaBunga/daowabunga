@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from '../../styles';
 type CardProps = {
   title: string;
   body: string;
@@ -56,9 +57,9 @@ export const CardBasic = ({
             <div className="foot" onLoad={() => setShowFoot(trueFoot)}>
               {footer}
               {showButton ? (
-                <div className="MainButton" onLoad={() => setShowButton(trueButton)}>
+                <Button className="Main" onLoad={() => setShowButton(trueButton)}>
                   <a href={buttonLink}>{buttonText}</a>
-                </div>
+                </Button>
               ) : null}
             </div>
           ) : null}

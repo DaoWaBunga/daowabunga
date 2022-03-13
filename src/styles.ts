@@ -15,3 +15,15 @@ export const FlexColumn = styled(FlexRow)`
 export const Card = styled(FlexColumn)`
   width: 300px;
 `;
+export const StickyFlexColumn = styled.div`
+  position: absolute;
+  top: 110px;
+  left: 100px;
+`;
+export const Button = styled.button`
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+`;

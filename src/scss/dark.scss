@@ -60,6 +60,10 @@ $bg-TKG: url('../assets/tkg_graffiti.png');
     box-shadow: 1px -2px 9px;
   }
 }
+button {
+  cursor: unset;
+}
+
 :root[data-theme='theme-dark'] {
   @import './site.scss';
 }

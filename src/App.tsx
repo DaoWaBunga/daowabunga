@@ -12,12 +12,11 @@ function App() {
     <>
       <Router>
         <TopNavigation />
-        <div className="websiteBody">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/tkg" element={<TKG />} />
-          </Routes>
-        </div>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/tkg" element={<TKG />} />
+        </Routes>
 
         <BottomFooter />
       </Router>

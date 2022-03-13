@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
-$primary-font: 'Ubuntu Mono', monospace;
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+$primary-font: 'Ubuntu Mono',
+monospace;
 $body-bg: $primary-bg;
+
 @mixin btn-shadow2 {
   box-shadow: 1px 1px 3px;
 }
@@ -21,6 +23,7 @@ $body-bg: $primary-bg;
 ::-webkit-scrollbar-thumb:hover {
   background: $body-bg;
 }
+
 h1 {
   font-size: 48px;
   font-weight: 200;
@@ -28,31 +31,38 @@ h1 {
   padding: 10px;
   margin: auto;
 }
+
 p {
   color: $text-color1;
 }
+
 body {
   background-color: $body-bg;
   font-family: $primary-font;
   font-size: 20px;
+  overflow-x: hidden;
 }
+
 .sticky {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
   z-index: 4;
 }
+
 .stickyFooter {
   position: sticky;
   position: -webkit-sticky;
   bottom: 0px;
   z-index: 2;
 }
+
 .ExtraFoot {
   position: sticky;
   z-index: 1;
   bottom: 100px;
 }
+
 .stickySettings {
   position: sticky;
   position: -webkit-sticky;
@@ -60,6 +70,7 @@ body {
   bottom: 60px;
   z-index: 2;
 }
+
 .NavigationBar {
   width: 100%;
   background-color: $secondary-bg;
@@ -69,6 +80,7 @@ body {
   background-position: left;
   border-bottom: 3px solid $innerbg0;
   @include box-shadow1;
+
   @media (min-width: 300px) {
     text-align: center;
     display: flex;
@@ -77,17 +89,21 @@ body {
     align-items: center;
     height: 90px;
   }
+
   @media (min-width: 768px) {
     text-align: center;
     display: block;
   }
+
   a {
     text-decoration: none !important;
   }
+
   h1 {
     font-weight: 600;
     text-transform: capitalize;
     color: $border1;
+
     @media (min-width: 300px) {
       font-size: 48px;
       padding: 10px;
@@ -95,6 +111,7 @@ body {
       width: 100%;
       text-align: right;
     }
+
     @media (min-width: 768px) {
       font-size: 36px;
       padding: 2px;
@@ -105,6 +122,7 @@ body {
   .burger {
     margin-left: auto;
     margin-right: 20px;
+
     button {
       background-color: inherit;
       display: flex;
@@ -120,6 +138,7 @@ body {
       }
     }
   }
+
   .dropDown {
     position: absolute;
     top: 75px;
@@ -129,29 +148,36 @@ body {
     border: 1px solid $border1;
     border-radius: 7.5px;
     @include box-shadow1;
+
     @media (min-width: 768px) {
       display: none;
     }
+
     .flex {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
     }
   }
+
   .flex {
     @media (min-width: 300px) {
       display: none;
     }
+
     @media (min-width: 768px) {
       display: flex;
       justify-content: center;
       width: 100%;
     }
+
     .buttonRow {
       margin-bottom: 5px;
+
       @media (min-width: 300px) {
         display: none;
       }
+
       @media (min-width: 768px) {
         display: flex;
         flex-wrap: nowrap;
@@ -162,17 +188,22 @@ body {
     }
   }
 }
+
 .colorSwitchButtons {
   display: flex;
   width: 100px;
   align-items: center;
+
   @media (min-width: 300px) {
     background-color: $secondary-bg;
   }
+
   @media (min-width: 768px) {
     background-color: $button1;
   }
+
   border-radius: 15px;
+
   .light {
     @include buttonAction;
     width: 100%;
@@ -180,14 +211,17 @@ body {
     justify-content: center;
     border-right: 0.25px solid grey;
     border-radius: 14px 0px 0px 14px;
+
     .active {
       color: $border1;
     }
+
     .inactive {
       opacity: 0.4;
       color: $border0;
     }
   }
+
   .dark {
     @include buttonAction;
     border-radius: 0px 14px 14px 0px;
@@ -195,15 +229,18 @@ body {
     display: flex;
     justify-content: center;
     border-left: 0.25px solid grey;
+
     .active {
       color: $border1;
     }
+
     .inactive {
       opacity: 0.4;
       color: $border0;
     }
   }
 }
+
 .button1 {
   cursor: pointer;
   display: flex;
@@ -216,11 +253,13 @@ body {
   color: $border1 !important;
   @include buttonAction;
   @include btn-shadow1;
+
   @media (min-width: 300px) {
     border-radius: none;
     margin: 3px;
     width: 100%;
   }
+
   @media (min-width: 768px) {
     border-radius: 0px 0px 15px 15px;
     margin: 0px;
@@ -228,26 +267,32 @@ body {
     width: fit-content;
   }
 }
+
 .websiteBody {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
+
 .sleekDesktop {
   @media (min-width: 300px) {
     display: none;
   }
+
   @media (min-width: 768px) {
     display: block;
     width: 10%;
     height: 100%;
   }
+
   @media (min-width: 1024px) {
     width: 15%;
   }
 }
+
 .sleekDesktopBody {
   @media (min-width: 300px) {
+    overflow: hidden;
     display: block;
     background-color: $secondary-bg;
     width: 95%;
@@ -259,6 +304,7 @@ body {
     z-index: 2;
     margin-bottom: 400px;
   }
+
   @media (min-width: 768px) {
     display: block;
     width: 80%;
@@ -267,12 +313,45 @@ body {
     margin-top: 15px;
     margin-bottom: 270px;
   }
+
   @media (min-width: 1024px) {
     width: 70%;
     padding: 35px;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 230px;
+  }
+}
+.sleekDesktopBodyTKG {
+  @media (min-width: 300px) {
+    overflow: hidden;
+    display: block;
+    background-color: $secondary-bg;
+    width: 95%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    @include box-shadow1;
+    margin-top: 10px;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 80%;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 70%;
+    padding: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 .SpaceAroundRowWrap {
@@ -283,6 +362,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
+
 .SpaceAroundRowNoWrap {
   display: flex;
   flex-direction: row;
@@ -291,31 +371,38 @@ body {
   width: 100%;
   flex-wrap: nowrap;
 }
+
 .CenteredColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   img {
     display: block;
     width: 250px;
     height: auto;
   }
 }
+
 .CompanyLogoBlock {
   width: fit-content;
   height: auto;
   border-radius: 100%;
   padding: 2%;
+
   img {
     display: block;
     height: auto;
+
     @media (min-width: 300px) {
       width: 250px;
     }
+
     @media (min-width: 500px) {
       width: 350px;
     }
+
     @media (min-width: 1024px) {
       width: 450px;
     }
@@ -335,17 +422,21 @@ body {
   @include box-shadow2;
   background-color: $body-bg;
   border-radius: 15px;
+
   @media (min-width: 375px) {
     flex-direction: column;
   }
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
+
   h1 {
     all: unset;
     font-size: 38px;
     color: $border0;
   }
+
   .TextContent {
     display: flex;
     flex-direction: column;
@@ -353,20 +444,25 @@ body {
     width: 50%;
     height: 275px;
     padding: 15px;
+
     @media (min-width: 300px) {
       width: 100%;
     }
+
     @media (min-width: 768px) {
       width: 50%;
     }
+
     p {
       overflow: auto;
     }
   }
+
   .ImageContent {
     display: flex;
     width: 50%;
     justify-content: center;
+
     img {
       display: block;
       padding: 10px;
@@ -379,12 +475,14 @@ body {
     }
   }
 }
+
 .OutterFoot {
   display: flex;
   flex-direction: column;
   position: absolute !important;
   bottom: 0;
   left: 15px;
+
   .WebFooter {
     display: flex;
     justify-content: center;
@@ -399,23 +497,28 @@ body {
       background-color: $secondary-bg;
       border-top: 3px solid $border0;
     }
+
     @media (min-width: 768px) {
       background-color: transparent;
       border-top: none;
     }
+
     img {
       display: none;
     }
+
     &:hover {
       z-index: 4;
       background-color: $secondary-bg;
       border-top: 3px solid $border0;
+
       @media (min-width: 768px) {
         background-size: 75px;
         background-position: right;
         background-repeat: no-repeat;
         background-image: url('../assets/DaowabungaCircleLogo.png');
       }
+
       img {
         display: block;
         width: 50px;
@@ -429,16 +532,19 @@ body {
   @media (min-width: 375px) {
     display: none;
   }
+
   @media (min-width: 768px) {
     display: block;
   }
 }
+
 .ColorModeSwitchMobile {
   display: flex;
   width: 100%;
   justify-content: center;
   margin: auto;
   padding: 20px;
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -456,25 +562,31 @@ body {
   @include card-shadow;
   flex-direction: column;
   height: auto;
+
   @media (min-width: 300px) {
     width: 100%;
   }
+
   @media (min-width: 768px) {
     width: 45%;
   }
+
   @media (min-width: 1024px) {
     width: 27.5%;
   }
+
   .title {
     display: block;
     text-align: center;
     font-size: 32px;
     color: $title-color1;
   }
+
   .image {
     width: 90%;
     display: flex;
     justify-content: center;
+
     img {
       background-color: $hideondarkbg;
       border: 1px solid $hideondarkborder;
@@ -483,6 +595,7 @@ body {
       height: auto;
     }
   }
+
   .body {
     display: flex;
     flex-wrap: wrap;
@@ -494,6 +607,7 @@ body {
     overflow: auto;
     padding: 1%;
   }
+
   .foot {
     display: flex;
     flex-direction: column;
@@ -511,48 +625,54 @@ body {
     flex-wrap: wrap;
   }
 }
-.MainButton {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+
+.Main {
   color: $text-color1 !important;
   background-color: $secondary-bg;
   border: 3px solid $border0;
-  border-radius: 15px;
+
   @include buttonAction;
   @include btn-shadow2;
+
   a {
     all: unset;
     color: $text-color1;
   }
+
   &:hover {
     border: 4px solid $border1;
   }
+
   @media (min-width: 300px) {
     width: 100%;
     font-size: 30px;
   }
+
   @media (min-width: 768px) {
     width: 100%;
     font-size: 36px;
   }
 }
+
 .RoadMap {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 40px;
   margin: auto;
+
   .leftMap {
     display: flex;
     width: 100%;
     justify-content: flex-start;
+
     .content {
       h1 {
         text-align: center;
         color: $title-color1;
         font-size: 28px;
       }
+
       p {
         margin: 0;
         color: $text-color1;
@@ -561,14 +681,17 @@ body {
         font-size: 16px;
         line-height: 16px;
       }
+
       padding: 10px;
       background-color: $body-bg;
       border: 3px double $border0;
       @include box-shadow1;
+
       @media (min-width: 300px) {
         text-align: left;
         width: 100%;
       }
+
       @media (min-width: 768px) {
         width: unset;
         min-width: 55%;
@@ -577,16 +700,19 @@ body {
       }
     }
   }
+
   .rightMap {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+
     .content {
       h1 {
         font-size: 28px;
         text-align: center;
         color: $title-color1;
       }
+
       p {
         margin: 0;
         color: $text-color1;
@@ -595,15 +721,18 @@ body {
         font-size: 16px;
         line-height: 16px;
       }
+
       padding: 10px;
       margin: 5px;
       @include box-shadow1;
 
       background-color: $body-bg;
       border: 3px double $border1;
+
       @media (min-width: 300px) {
         width: 100%;
       }
+
       @media (min-width: 768px) {
         width: unset;
         min-width: 55%;
@@ -612,30 +741,36 @@ body {
     }
   }
 }
+
 .TeamMemberCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (min-width: 300px) {
     width: 150px;
     padding: 3px;
     margin: auto;
   }
+
   @media (min-width: 768px) {
     width: 225px;
     padding: 5px;
   }
+
   @media (min-width: 1024px) {
     width: 280px;
     padding: 7px;
   }
+
   .image {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 3px;
     margin: auto;
+
     img {
       border: 8px double $border1;
       border-radius: 100%;
@@ -643,6 +778,7 @@ body {
       max-width: 100%;
     }
   }
+
   h1 {
     font-size: 26px;
     color: $title-color1 !important;
@@ -656,6 +792,7 @@ body {
     border: 3px double $border1;
     border-bottom: unset;
   }
+
   .bio {
     display: flex;
     justify-content: center;
@@ -665,6 +802,7 @@ body {
     align-items: center;
     border: 3px double $border0;
     border-top: unset;
+
     p {
       display: block;
       margin: auto;
@@ -677,16 +815,32 @@ body {
   }
 }
 
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px -10000px;
+  }
+}
+
 .TKGBodyWrapper {
   display: flex;
   width: 100%;
   height: 100%;
   @include linearbg;
+  overflow: hidden;
+
   .TKGBody {
-    display: flex;
+    background-image: url('../assets/shapes.png');
     width: 100%;
     height: 100%;
-    background-image: url('../assets/shapes.png');
+display: flex;
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 250px;
+    animation: animatedBackground 500s linear infinite;
   }
 }
 
@@ -701,14 +855,139 @@ body {
   border-radius: 30px;
   justify-content: center;
 }
+
 .FixedInnerFoot {
   position: fixed;
   bottom: 80px;
 }
+
 .ImgBlock {
   img {
     display: block;
     width: 150px !important;
     height: 150px !important;
+  }
+}
+
+.StickySideNav {
+  position: fixed !important;
+  background-color: transparent;
+  z-index: 2;
+}
+
+@keyframes Top-To-Bottom0 {
+  0% {
+    position: absolute;
+    transform: rotate(-0deg);
+    top: 30%;
+    left: 50%;
+    overflow: hidden;
+  }
+
+  100% {
+    position: absolute;
+    top: 100%;
+    left: -120%;
+    transform: rotate(360deg);
+    overflow: hidden;
+  }
+}
+
+
+
+.TKGImg0 {
+  animation: Top-To-Bottom0 18s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal both;
+  z-index: 1;
+}
+
+.TKGImg1 {
+  animation: Top-To-Bottom1 30s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal both;
+  z-index: 1;
+}
+
+.img0 {
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+
+
+@function multiple-box-shadow($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+
+  @return unquote($value);
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+.galaxy {
+  .stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+
+  .stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+
+  .stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
   }
 }

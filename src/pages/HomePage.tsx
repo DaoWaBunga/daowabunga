@@ -13,7 +13,7 @@ export const HomePage = () => {
   const NewsImage = [DawaLogo];
 
   return (
-    <>
+    <div className="websiteBody">
       <div className="sleekDesktopBody">
         <FlexRow className={''}>
           <div className="NewsBanner">
@@ -64,7 +64,7 @@ export const HomePage = () => {
         </FlexRow>
       </div>
       <HomePageFooter />
-    </>
+    </div>
   );
 };
 export default HomePage;
