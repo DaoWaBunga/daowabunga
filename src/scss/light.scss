@@ -60,6 +60,12 @@ $bg-TKG: url('../assets/tkg_graffiti_light.png');
     box-shadow: 3px -2px 14px;
   }
 }
+button {
+  cursor: unset;
+}
 :root[data-theme='theme-light'] {
   @import './site.scss';
+  button {
+    cursor: unset;
+  }
 }

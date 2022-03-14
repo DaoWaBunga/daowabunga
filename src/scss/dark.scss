@@ -66,4 +66,7 @@ button {
 
 :root[data-theme='theme-dark'] {
   @import './site.scss';
+  button {
+    cursor: unset;
+  }
 }
