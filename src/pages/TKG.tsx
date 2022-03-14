@@ -22,6 +22,7 @@ export const TKG = () => {
   };
   return (
     <>
+      <div className="TKGTitleHover" />
       <div className="mobileTKGExpand">
         <Button style={{ backgroundColor: 'darkorange' }}>
           <CgMenuBoxed style={{ width: '60px', height: '60px' }} onClick={() => toggleMenu()} />

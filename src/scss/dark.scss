@@ -15,7 +15,7 @@ $hideondarkbg: transparent;
 $hideondarkborder: transparent;
 $button1: $secondary-bg;
 $bg-TKG: url('../assets/tkg_graffiti.png');
-
+$TKGTitle: url('../assets/tkg.png');
 @mixin linearbg {
   background: linear-gradient(
     156deg,

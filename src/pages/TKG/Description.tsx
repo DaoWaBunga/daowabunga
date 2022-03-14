@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import imgs from '../../data/TKGImgs.json';
+import { BigText, FlexRow } from '../../styles';
 export const Description = () => {
   const settings = {
     dots: false,
@@ -48,23 +49,33 @@ export const Description = () => {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 300,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: true
         }
       }
     ]
   };
 
   return (
-    <Slider {...settings}>
-      {imgs.map((map) => (
-        <div key={map.image}>
-          <img src={map.image} className="img1" />
-        </div>
-      ))}
-    </Slider>
+    <>
+      <div className="MainBlock">
+        <Slider {...settings}>
+          {imgs.map((map) => (
+            <div key={map.image}>
+              <img src={map.image} className="img1" />
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <FlexRow>
+        <BigText>
+          Welcome to <div className="TKGTitle" />
+        </BigText>
+      </FlexRow>
+    </>
   );
 };
 export default Description;
