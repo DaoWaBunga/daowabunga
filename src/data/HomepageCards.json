@@ -28,13 +28,13 @@
     "cardIsActive": true
   },
   {
-    "title": "",
+    "title": "(🍕, 🍕)",
     "image": "",
-    "text": "",
-    "foot": "",
+    "text": "🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕🍕",
+    "foot": "🍕",
     "buttonLink": "",
-    "buttonText": "",
-    "buttonIsTrue": false,
+    "buttonText": "🍕",
+    "buttonIsTrue": true,
     "titleIsTrue": true,
     "imageIsTrue": true,
     "textIsTrue": true,

@@ -11,7 +11,10 @@ export const BottomFooter = () => {
       <div className="OutterFoot">
         <div className="WebFooter stickyFooter">
           <FlexRow>
-            <p>Copyright Daowabunga, 2022.</p>
+            <p>Copyright Daowabunga, 2022. </p>
+            <h1>
+              <span>(🍕, 🍕)</span>
+            </h1>
           </FlexRow>
         </div>
       </div>

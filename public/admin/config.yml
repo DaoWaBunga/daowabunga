@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: DaoWaBunga/daowabunga
+  branch: master
+  use_graphql: true
+  squash_merges: true
+publish_mode: editorial_workflow
+media_folder: 'public/images/uploads'
+public_folder: '/images/uploads'
+open_authoring: true
+collections:
+  - name: 'configs'
+    label: 'Configs'
+    files:
+      - name: 'team'
+        label: 'Team'
+        file: 'src/data/Team.json'
+        fields:
+          - {
+              label: 'Team',
+              name: 'team',
+              widget: 'relation',
+              search_fields: ['display'],
+              value_field: 'name',
+            }
+      - name: 'upcoming_events'
+        label: 'Upcoming Events'
+        file: 'src/upcoming_events.json'
+        fields:
+          - {
+              label: 'Items',
+              name: 'items',
+              required: true,
+              widget: 'list',
+              fields:
+                [
+                  { label: 'Headline', name: 'headline', widget: 'string' },
+                  { label: 'Sub Text', name: 'subText', widget: 'string' }
+                ]
+            }

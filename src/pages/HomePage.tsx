@@ -56,11 +56,6 @@ export const HomePage = () => {
         </FlexRow>
         <FlexRow className={''}>
           <TeamMemberCard />
-          <TeamMemberCard />
-          <TeamMemberCard />
-          <TeamMemberCard />
-          <TeamMemberCard />
-          <TeamMemberCard />
         </FlexRow>
       </div>
       <HomePageFooter />
