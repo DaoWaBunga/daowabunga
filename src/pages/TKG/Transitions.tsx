@@ -1,21 +1,10 @@
 import FlexRow from '../../components/Rows/FlexRow';
-import ImageGallery from 'react-image-gallery';
-import { imgs } from '../../data/TKGImgs';
+import Daowabunga from '../../assets/DaowabungaCircleLogo.png';
 export const Transitions = () => {
   return (
     <FlexRow>
       <div className="Loading">
-        <div className="Loader">
-          <ImageGallery
-            items={imgs}
-            autoPlay={true}
-            slideDuration={30}
-            showPlayButton={false}
-            showThumbnails={false}
-            showNav={false}
-            showFullscreenButton={false}
-          />
-        </div>
+        <img src={Daowabunga} className="Loader" />
       </div>
     </FlexRow>
   );

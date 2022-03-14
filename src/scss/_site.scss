@@ -327,14 +327,14 @@ body {
     overflow: hidden;
     display: block;
     background-color: $secondary-bg;
-    width: 50%;
+    width: 65%;
     height: 100%;
     padding: 15px;
     border-radius: 8px;
     @include box-shadow1;
     margin-top: 10px;
-    z-index: 3;
-    margin-bottom: 10px;
+    z-index: 1;
+    margin-bottom: 80px;
   }
 
   @media (min-width: 768px) {
@@ -343,6 +343,7 @@ body {
     padding: 25px;
     border-radius: 12px;
     margin-top: 15px;
+    z-index: 3;
     margin-bottom: 10px;
   }
 
@@ -656,6 +657,23 @@ body {
 
   @media (min-width: 1024px) {
     font-size: 22px;
+  }
+}
+.MainCard {
+  color: $text-color1 !important;
+  background-color: $secondary-bg;
+  border: 3px solid $border0;
+margin: auto;
+
+  @include btn-shadow2;
+
+  a {
+    all: unset;
+    color: $text-color1;
+  }
+
+  &:hover {
+    border: 4px solid $border1;
   }
 }
 
@@ -984,6 +1002,14 @@ body {
   width: 250px;
   height: 250px;
 }
+.img1 {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 3px double $border0;
+  border-radius: 100%;
+}
 
 @function multiple-box-shadow($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
@@ -1094,5 +1120,15 @@ $shadows-big: multiple-box-shadow(100);
     max-width: 400px;
     min-width: 250px;
     animation: Top-To-Bottom0 7s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite normal both;
+  }
+}
+.amount-sections {
+  display: flex;
+  height: 200px;
+
+  &.amount-sections-scroll {
+    // width: 100%;
+    display: block;
+    position: relative;
   }
 }

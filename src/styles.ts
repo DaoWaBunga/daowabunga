@@ -44,12 +44,12 @@ export const Image = styled.image`
     height: 300px;
   }
   @media (min-width: ${bp.tablet}) {
-    width: 375px;
-    height: 375px;
+    width: 330px;
+    height: 330px;
   }
   @media (min-width: ${bp.laptop}) {
-    width: 440px;
-    height: 440px;
+    width: 375px;
+    height: 375px;
   }
 `;
 export const SqImg = styled(Image)`
@@ -76,14 +76,14 @@ export const Paragraph = styled.p`
   }
   @media (min-width: ${bp.tablet}) {
     min-width: 450px;
-    padding: 2px;
+    padding: 12px;
   }
   @media (min-width: ${bp.laptop}) {
     min-width: 250px;
     max-width: 100%;
   }
   @media (min-width: ${bp.desktop}) {
-    max-width: 600px;
+    max-width: 400px;
     min-width: 250px;
   }
   img {

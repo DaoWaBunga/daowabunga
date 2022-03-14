@@ -1,12 +1,9 @@
 import { StickyFlexColumn, Button } from '../styles';
-import ImageGallery from 'react-image-gallery';
 import Mint from './TKG/Mint';
 import Description from './TKG/Description';
 import DisplayWallet from './TKG/Wallet';
 import BodyPadding from '../layouts/BodyPadding';
 import { useState } from 'react';
-import { imgs } from '../data/TKGImgs';
-import useWindowDimensions from '../hooks/useWindowSize';
 import { CgMenuBoxed } from 'react-icons/cg';
 import Transitions from './TKG/Transitions';
 export const TKG = () => {
@@ -16,8 +13,6 @@ export const TKG = () => {
   const [showWallet, setShowWallet] = useState(false);
   const [showTransition, setShowTransition] = useState(false);
   const toggleMenu = () => setExpandMenu(!expandMenu);
-  const { width } = useWindowDimensions();
-  const isAtWidth = width >= 1024;
   const closeAll = async () => {
     setShowDescription(false);
     setShowMint(false);
@@ -71,32 +66,7 @@ export const TKG = () => {
             {showTransition ? <Transitions /> : null}
             {showDescription ? (
               <>
-                {isAtWidth ? (
-                  <>
-                    <ImageGallery
-                      items={imgs}
-                      autoPlay={true}
-                      slideDuration={100}
-                      showPlayButton={false}
-                      showThumbnails={false}
-                      showNav={false}
-                      showFullscreenButton={false}
-                    />
-                    <Description />
-                  </>
-                ) : (
-                  <>
-                    <ImageGallery
-                      items={imgs}
-                      autoPlay={true}
-                      slideDuration={100}
-                      showPlayButton={false}
-                      showThumbnails={false}
-                      showNav={false}
-                      showFullscreenButton={false}
-                    />
-                  </>
-                )}
+                <Description />
               </>
             ) : null}
             {showMint ? (
