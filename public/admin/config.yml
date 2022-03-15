@@ -5,43 +5,39 @@ backend:
   use_graphql: true
   squash_merges: true
 publish_mode: editorial_workflow
-media_folder: 'public/images/uploads'
-public_folder: '/images/uploads'
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 open_authoring: true
 collections:
-  - name: 'configs'
-    label: 'Configs'
+  - name: "configs"
+    label: "Configs"
     files:
-      - name: 'team'
-        label: 'Team'
-        file: 'src/Team.json'
+      - name: "team"
+        label: "Team"
+        file: "src/Team.json"
+        fields:
+          - [
+              { label: "memberName", name: "memberName", widget: "string" },
+              { label: "memberImage", name: "memberImage", widget: "string" },
+              {
+                label: "memberDescription",
+                name: "memberDescription",
+                widget: "string",
+              },
+            ]
+
+      - name: "upcoming_events"
+        label: "Upcoming Events"
+        file: "src/upcoming_events.json"
         fields:
           - {
-              label: 'Team',
-              name: 'team',
-              widget: 'list',
+              label: "Items",
+              name: "items",
               required: true,
-              extension: 'json',
-              format: 'json',
+              widget: "list",
               fields:
                 [
-                  { label: 'memberName', name: 'memberName', widget: 'string' },
-                  { label: 'memberImage', name: 'memberImage', widget: 'string' },
-                  { label: 'memberDescription', name: 'memberDescription', widget: 'string' }
-                ]
-            }
-      - name: 'upcoming_events'
-        label: 'Upcoming Events'
-        file: 'src/upcoming_events.json'
-        fields:
-          - {
-              label: 'Items',
-              name: 'items',
-              required: true,
-              widget: 'list',
-              fields:
-                [
-                  { label: 'memberName', name: 'memberName', widget: 'string' },
-                  { label: 'Sub Text', name: 'subText', widget: 'string' }
-                ]
+                  { label: "memberName", name: "memberName", widget: "string" },
+                  { label: "Sub Text", name: "subText", widget: "string" },
+                ],
             }
