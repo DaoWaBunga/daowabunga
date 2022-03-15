@@ -1,28 +1,28 @@
 {
   "items": [
     {
-      "memberName": "Fantom Patrons 3/5",
-      "memberImage": "2/04/22 @ 3pm PST",
+      "memberName": "number one",
+      "memberImage": "url goes here",
+      "memberDescription": "description goes here"
+    },
+    {
+      "memberName": "number two",
+      "memberImage": "https://via.placeholder.com/500x500",
       "memberDescription": "wat"
     },
     {
-      "memberName": "opGAS Launch (Optimism - ETH)",
-      "memberImage": "Delayed",
+      "memberName": "someone",
+      "memberImage": "https://thispersondoesnotexist.com/image",
       "memberDescription": "wat"
     },
     {
-      "memberName": "bobaGAS Launch (BOBA - ETH)",
-      "memberImage": "Delayed",
+      "memberName": "you can add as many",
+      "memberImage": "https://via.placeholder.com/500x500",
       "memberDescription": "wat"
     },
     {
-      "memberName": "arbGAS Launch (Arbitrum - ETH)",
-      "memberImage": "Delayed",
-      "memberDescription": "wat"
-    },
-    {
-      "memberName": "Utilities Upgrade",
-      "memberImage": "TBD",
+      "memberName": "or remove as many",
+      "memberImage": "https://via.placeholder.com/500x500",
       "memberDescription": "wat"
     }
   ]

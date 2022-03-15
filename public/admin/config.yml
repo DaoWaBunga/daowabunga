@@ -12,30 +12,6 @@ collections:
   - name: "configs"
     label: "Configs"
     files:
-      - name: "team_members"
-        label: "Team"
-        file: "src/team_members.json"
-        fields:
-          - {
-              label: "Team",
-              name: "team",
-              widget: "list",
-              required: true,
-              fields:
-                [
-                  { label: "memberName", name: "memberName", widget: "string" },
-                  {
-                    label: "memberImage",
-                    name: "memberImage",
-                    widget: "string",
-                  },
-                  {
-                    label: "memberDescription",
-                    name: "memberDescription",
-                    widget: "string",
-                  },
-                ],
-            }
       - name: "myteam"
         label: "myteam"
         file: "src/myteam.json"
