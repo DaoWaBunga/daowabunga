@@ -1,0 +1,79 @@
+{
+    "items": [
+        {
+            "sectionTitle": "number one",
+            "bullets": [
+                {
+                    "bullet": "pizza"
+                },
+                {
+                    "bullet": "more pizza"
+                },
+                {
+                    "bullet": "even more pizza"
+                }
+            ],
+            "location": "leftMap"
+        },
+        {
+            "sectionTitle": "number two",
+            "bullets": [
+                {
+                    "bullet": "pizza"
+                },
+                {
+                    "bullet": "more pizza"
+                },
+                {
+                    "bullet": "even more pizza"
+                }
+            ],
+            "location": "rightMap"
+        },
+        {
+            "sectionTitle": "number three",
+            "bullets": [
+                {
+                    "bullet": "pizza"
+                },
+                {
+                    "bullet": "more pizza"
+                },
+                {
+                    "bullet": "even more pizza"
+                }
+            ],
+            "location": "leftMap"
+        },
+        {
+            "sectionTitle": "number four",
+            "bullets": [
+                {
+                    "bullet": "pizza"
+                },
+                {
+                    "bullet": "more pizza"
+                },
+                {
+                    "bullet": "even more pizza"
+                }
+            ],
+            "location": "rightMap"
+        },
+        {
+            "sectionTitle": "number five",
+            "bullets": [
+                {
+                    "bullet": "pizza"
+                },
+                {
+                    "bullet": "more pizza"
+                },
+                {
+                    "bullet": "even more pizza"
+                }
+            ],
+            "location": "leftMap"
+        }
+    ]
+}

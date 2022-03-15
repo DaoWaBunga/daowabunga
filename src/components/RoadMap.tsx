@@ -1,10 +1,10 @@
-import Roadmap from '../data/Roadmap.json';
+import Roadmap from '../myroadmap.json';
 export const RoadMap = () => {
   return (
     <>
       <div className="RoadMap">
         <div className="mapHead"></div>
-        {Roadmap.map((map) => (
+        {Roadmap.items.map((map) => (
           <div key={map.sectionTitle} className={map.location}>
             <div className="content">
               <h1>{map.sectionTitle}</h1>

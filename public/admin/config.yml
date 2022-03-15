@@ -32,3 +32,34 @@ collections:
                   },
                 ],
             }
+      - name: "myroadmap"
+        label: "myroadmap"
+        file: "src/myroadmap.json"
+        fields:
+          - {
+              label: "Items",
+              name: "items",
+              required: true,
+              widget: "list",
+              fields:
+                [
+                  {
+                    label: "sectionTitle",
+                    name: "sectionTitle",
+                    widget: "string",
+                  },
+                  {
+                    label: "bullets",
+                    name: "bullets",
+                    widget: "list",
+                    required: true,
+                    fields:
+                      [{ label: "bullet", name: "bullet", widget: "string" }],
+                  },
+                  {
+                    label: "Map Location (Left / Right Alternate)",
+                    name: "location",
+                    widget: "string",
+                  },
+                ],
+            }
