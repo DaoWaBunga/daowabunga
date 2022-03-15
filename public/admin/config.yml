@@ -12,7 +12,7 @@ collections:
   - name: "configs"
     label: "Configs"
     files:
-      - name: "team"
+      - name: "team_members"
         label: "Team"
         file: "src/team_members.json"
         fields:
