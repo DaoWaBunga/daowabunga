@@ -14,15 +14,13 @@ collections:
     files:
       - name: "team"
         label: "Team"
-        file: "src/Team.json"
+        file: "src/team_members.json"
         fields:
           - {
               label: "Team",
               name: "team",
               widget: "list",
               required: true,
-              extension: "json",
-              format: "json",
               fields:
                 [
                   { label: "memberName", name: "memberName", widget: "string" },
