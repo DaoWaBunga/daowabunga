@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: DaoWaBunga/daowabunga
-  branch: master
+  branch: main
   use_graphql: true
   squash_merges: true
 publish_mode: editorial_workflow
