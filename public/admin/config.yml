@@ -14,14 +14,19 @@ collections:
     files:
       - name: 'team'
         label: 'Team'
-        file: 'src/data/Team.json'
+        file: 'src/Team.json'
         fields:
           - {
               label: 'Team',
               name: 'team',
-              widget: 'relation',
-              search_fields: ['display'],
-              value_field: 'name',
+              widget: 'list',
+              required: true,
+              fields:
+                [
+                  { label: 'memberName', name: 'memberName', widget: 'string' },
+                  { label: 'memberImage', name: 'memberImage', widget: 'string' },
+                  { label: 'memberDescription', name: 'memberDescription', widget: 'string' }
+                ]
             }
       - name: 'upcoming_events'
         label: 'Upcoming Events'
@@ -34,7 +39,7 @@ collections:
               widget: 'list',
               fields:
                 [
-                  { label: 'Headline', name: 'headline', widget: 'string' },
+                  { label: 'memberName', name: 'memberName', widget: 'string' },
                   { label: 'Sub Text', name: 'subText', widget: 'string' }
                 ]
             }
