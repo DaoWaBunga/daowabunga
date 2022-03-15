@@ -16,16 +16,28 @@ collections:
         label: "Team"
         file: "src/Team.json"
         fields:
-          - [
-              { label: "memberName", name: "memberName", widget: "string" },
-              { label: "memberImage", name: "memberImage", widget: "string" },
-              {
-                label: "memberDescription",
-                name: "memberDescription",
-                widget: "string",
-              },
-            ]
-
+          - {
+              label: "Team",
+              name: "team",
+              widget: "list",
+              required: true,
+              extension: "json",
+              format: "json",
+              fields:
+                [
+                  { label: "memberName", name: "memberName", widget: "string" },
+                  {
+                    label: "memberImage",
+                    name: "memberImage",
+                    widget: "string",
+                  },
+                  {
+                    label: "memberDescription",
+                    name: "memberDescription",
+                    widget: "string",
+                  },
+                ],
+            }
       - name: "upcoming_events"
         label: "Upcoming Events"
         file: "src/upcoming_events.json"
