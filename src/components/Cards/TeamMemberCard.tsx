@@ -2,7 +2,7 @@ import Team from '../../data/Team.json';
 export const TeamMemberCard = () => {
   return (
     <>
-      {Team.map((map) => (
+      {Team.team.map((map) => (
         <div key={map.memberName} className="TeamMemberCard">
           <div className="image">
             <img src={map.memberPhoto} />
