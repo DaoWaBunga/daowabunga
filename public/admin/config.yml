@@ -21,6 +21,8 @@ collections:
               name: 'team',
               widget: 'list',
               required: true,
+              extension: 'json',
+              format: 'json',
               fields:
                 [
                   { label: 'memberName', name: 'memberName', widget: 'string' },
