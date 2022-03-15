@@ -1,24 +1,29 @@
 {
   "items": [
     {
-      "headline": "Fantom Patrons 3/5",
-      "subText": "2/04/22 @ 3pm PST"
+      "memberName": "Fantom Patrons 3/5",
+      "memberImage": "2/04/22 @ 3pm PST",
+      "memberDescription": "wat"
     },
     {
-      "headline": "opGAS Launch (Optimism - ETH)",
-      "subText": "Delayed"
+      "memberName": "opGAS Launch (Optimism - ETH)",
+      "memberImage": "Delayed",
+      "memberDescription": "wat"
     },
     {
-      "headline": "bobaGAS Launch (BOBA - ETH)",
-      "subText": "Delayed"
+      "memberName": "bobaGAS Launch (BOBA - ETH)",
+      "memberImage": "Delayed",
+      "memberDescription": "wat"
     },
     {
-      "headline": "arbGAS Launch (Arbitrum - ETH)",
-      "subText": "Delayed"
+      "memberName": "arbGAS Launch (Arbitrum - ETH)",
+      "memberImage": "Delayed",
+      "memberDescription": "wat"
     },
     {
-      "headline": "Utilities Upgrade",
-      "subText": "TBD"
+      "memberName": "Utilities Upgrade",
+      "memberImage": "TBD",
+      "memberDescription": "wat"
     }
   ]
 }
