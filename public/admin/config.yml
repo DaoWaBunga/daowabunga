@@ -48,6 +48,11 @@ collections:
               fields:
                 [
                   { label: "memberName", name: "memberName", widget: "string" },
-                  { label: "Sub Text", name: "subText", widget: "string" },
+                  { label: "Image", name: "memberImage", widget: "string" },
+                  {
+                    label: "Description",
+                    name: "memberDescription",
+                    widget: "string",
+                  },
                 ],
             }
