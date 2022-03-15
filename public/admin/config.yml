@@ -36,9 +36,9 @@ collections:
                   },
                 ],
             }
-      - name: "upcoming_events"
-        label: "Upcoming Events"
-        file: "src/upcoming_events.json"
+      - name: "myteam"
+        label: "myteam"
+        file: "src/myteam.json"
         fields:
           - {
               label: "Items",
