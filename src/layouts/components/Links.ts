@@ -6,6 +6,10 @@ const Links = [
   {
     title: 'TKG',
     location: '/tkg'
+  },
+  {
+    title: 'Whitelist',
+    location: '/whitelist'
   }
 ];
 export default Links;

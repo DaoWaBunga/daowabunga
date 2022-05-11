@@ -1175,3 +1175,135 @@ $shadows-big: multiple-box-shadow(100);
   background-size: 300px 50px;
   background-image: $TKGTitle;
 }
+.WhiteListMainPage {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  .bodyFooter {
+    margin-top: 1%;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $innerbg2;
+    padding: 5px;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    .footSection {
+      min-width: 25%;
+      max-width: 30%;
+      background-color: $innerbg0;
+      padding: 2px;
+      border-radius: 10px;
+      text-align: center;
+      h6 {
+        font-size: 17.5px;
+        color: $border0;
+      }
+      p {
+        font-size: 15.5px;
+        color: $text-color1;
+      }
+    }
+  }
+  .bodyContent {
+    background-color: $innerbg1;
+    border-radius: 30px;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+    .bodyTitle {
+      width: 60%;
+      display: block;
+      text-align: center;
+      background-color: $innerbg2;
+      border-radius: 30px;
+      margin-bottom: 1%;
+      h1 {
+        font-size: 38px;
+      }
+      h4 {
+        font-size: 19.5px;
+        color: $text-color1;
+      }
+    }
+    .bodyColumns {
+      display: flex;
+      width: 90%;
+      flex-wrap: nowrap;
+      background-color: $innerbg0;
+      padding: 5px;
+      border-radius: 15px;
+      align-items: center;
+      justify-content: space-around;
+      .column {
+        width: 45%;
+        display: flex;
+        overflow: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 13px;
+        background-color: $innerbg2;
+        border-radius: 10px;
+        ul {
+          background-color: $innerbg1;
+          border-radius: 20px;
+          li {
+            color: $border0;
+          }
+        }
+        .mintButton {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          background-color: $innerbg0;
+          button {
+            width: 100%;
+            background-color: $border1;
+            color: black;
+            font-size: 30px;
+          }
+        }
+        h2 {
+          font-size: 22.5px;
+          color: $border0;
+          text-align: center;
+        }
+        h6 {
+          font-size: 17.5px;
+          color: $text-color1;
+        }
+        .galleryRow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: nowrap;
+          width: 100%;
+          img {
+            margin: 3px 3px;
+            max-width: 50px !important;
+            max-height: 50px !important;
+            border-radius: 2px;
+          }
+        }
+        img {
+          display: block;
+          max-width: 100% !important;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
