@@ -10,6 +10,10 @@ const Links = [
   {
     title: 'Whitelist',
     location: '/whitelist'
+  },
+  {
+    title: 'DikHeads',
+    location: '/dikheads'
   }
 ];
 export default Links;

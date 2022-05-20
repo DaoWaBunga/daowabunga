@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import BottomFooter from './layouts/BottomFooter';
 import TKG from './pages/TKG';
 import WhiteList from './pages/Whitelist/whitelistmainpage';
+import DikHeads from './pages/DikHeads';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/tkg" element={<TKG />} />
           <Route path="/whitelist" element={<WhiteList />} />
+          <Route path="/dikheads" element={<DikHeads />} />
         </Routes>
 
         <BottomFooter />
